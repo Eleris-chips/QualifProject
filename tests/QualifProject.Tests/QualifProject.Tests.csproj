@@ -26,7 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\QualifProject.Application\QualifProject.Application.csproj" />
-    <ProjectReference Include="..\..\src\QualifProject.Business\QualifProject.Business.csproj" />
+    <ProjectReference Include="..\..\src\QualifProject.Domain\QualifProject.Domain.csproj" />
     <ProjectReference Include="..\..\src\QualifProject.Infrastructure\QualifProject.Infrastructure.csproj" />
   </ItemGroup>
 

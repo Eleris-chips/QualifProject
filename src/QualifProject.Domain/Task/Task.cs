@@ -1,6 +1,8 @@
-﻿namespace QualifProject.Business.Task;
+﻿using QualifProject.Domain.Entities;
 
-public class Task
+namespace QualifProject.Domain.Task;
+
+public class Task : IEntity
 {
     #region Public Constructors
 

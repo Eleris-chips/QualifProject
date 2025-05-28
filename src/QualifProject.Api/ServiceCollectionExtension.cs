@@ -1,5 +1,5 @@
 ﻿using QualifProject.Application;
-using QualifProject.Business;
+using QualifProject.Domain;
 using QualifProject.Infrastructure;
 
 namespace QualifProject.Api;
@@ -11,7 +11,7 @@ public static class ServiceCollectionExtension
     public static IServiceCollection ConfigureDependencies(this IServiceCollection services)
         => services
         .AddApplicationDependencies()
-        .AddBusinessDependencies()
+        .AddDomainDependencies()
         .AddInfrastructureDependencies()
         ;
 

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QualifProject.Business\QualifProject.Business.csproj" />
+    <ProjectReference Include="..\QualifProject.Domain\QualifProject.Domain.csproj" />
   </ItemGroup>
 
 </Project>

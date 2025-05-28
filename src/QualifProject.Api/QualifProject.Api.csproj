@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\QualifProject.Application\QualifProject.Application.csproj" />
-    <ProjectReference Include="..\QualifProject.Business\QualifProject.Business.csproj" />
+    <ProjectReference Include="..\QualifProject.Domain\QualifProject.Domain.csproj" />
     <ProjectReference Include="..\QualifProject.Infrastructure\QualifProject.Infrastructure.csproj" />
   </ItemGroup>
 

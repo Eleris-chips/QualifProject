@@ -1,5 +1,5 @@
 ﻿using QualifProject.Application.Repositories;
-using Task = QualifProject.Business.Task.Task;
+using Task = QualifProject.Domain.Task.Task;
 
 namespace QualifProject.Infrastructure.Repository;
 

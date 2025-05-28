@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using QualifProject.Application;
-using QualifProject.Business;
+using QualifProject.Domain;
 using QualifProject.Infrastructure;
 
 namespace QualifProject.Tests;
@@ -33,7 +33,7 @@ public abstract class ServiceTestBase<TService>
     {
         var serviceCollection = new ServiceCollection()
             .AddApplicationDependencies()
-            .AddBusinessDependencies()
+            .AddDomainDependencies()
             .AddInfrastructureDependencies();
 
         ServiceProvider = serviceCollection.BuildServiceProvider();

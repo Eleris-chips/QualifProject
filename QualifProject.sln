@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualifProject.Api", "src\Qu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualifProject.Application", "src\QualifProject.Application\QualifProject.Application.csproj", "{93F55002-7079-4058-8FD0-5AD93D3AC84E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualifProject.Business", "src\QualifProject.Business\QualifProject.Business.csproj", "{F1BB86A4-E9BB-4D86-8FE9-93AF51E2346F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualifProject.Domain", "src\QualifProject.Domain\QualifProject.Domain.csproj", "{F1BB86A4-E9BB-4D86-8FE9-93AF51E2346F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QualifProject.Infrastructure", "src\QualifProject.Infrastructure\QualifProject.Infrastructure.csproj", "{E9FD6793-D554-434D-91C3-D6D239A0FFE2}"
 EndProject
