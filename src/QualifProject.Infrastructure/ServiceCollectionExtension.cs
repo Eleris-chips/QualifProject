@@ -10,7 +10,7 @@ public static class ServiceCollectionExtension
 
     public static IServiceCollection AddInfrastructureDependencies(this IServiceCollection services)
         => services
-            .AddScoped<ITaskRepository, TaskRepository>();
+            .AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
     #endregion Public Methods
 }

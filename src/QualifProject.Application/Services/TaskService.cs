@@ -1,6 +1,7 @@
 ﻿using QualifProject.Application.Models;
 using QualifProject.Application.Repositories;
 using QualifProject.Application.Services.Description;
+using QualifProject.Domain.Task;
 
 namespace QualifProject.Application.Services;
 
@@ -11,13 +12,13 @@ public class TaskService : ITaskService
     /// <summary>
     /// The task repository.
     /// </summary>
-    private readonly ITaskRepository _taskRepository;
+    private readonly IRepository<TaskAggregate> _taskRepository;
 
     #endregion Private Fields
 
     #region Public Constructors
 
-    public TaskService(ITaskRepository taskRepository)
+    public TaskService(IRepository<TaskAggregate> taskRepository)
     {
         _taskRepository = taskRepository;
     }

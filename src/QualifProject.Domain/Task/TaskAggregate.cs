@@ -2,11 +2,11 @@
 
 namespace QualifProject.Domain.Task;
 
-public class Task : IEntity
+public class TaskAggregate : IEntity, IAggregateRoot
 {
     #region Public Constructors
 
-    public Task(string description, bool isCompleted, string title)
+    public TaskAggregate(string description, bool isCompleted, string title)
     {
         CreatedDate = DateTime.Now;
         Description = description;
@@ -34,8 +34,7 @@ public class Task : IEntity
     /// </summary>
     public void CompleteTask()
     {
-        IsCompleted = true;
-        CompletionDate = DateTime.Now;
+        throw new NotImplementedException();
     }
 
     /// <summary>
@@ -45,16 +44,14 @@ public class Task : IEntity
     /// <param name="description">The description to set.</param>
     public void ConfigureTask(string title, string description)
     {
-        Title = title;
-        Description = description;
+        throw new NotImplementedException();
     }
 
     /// <summary>
     /// Set the current task id.
     /// </summary>
     /// <param name="taskId">The id to set.</param>
-    public void SetTaskId(int taskId)
-     => Id = taskId;
+    public void SetId(int taskId) => Id = taskId;
 
     #endregion Public Methods
 }
