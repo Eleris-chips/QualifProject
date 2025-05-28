@@ -9,7 +9,7 @@ public class Repository<TEntity> : IRepository<TEntity>
     #region Private Fields
 
     private readonly List<TEntity> _entities = [];
-    private int _nextId = 0;
+    private int _nextId = 1;
 
     #endregion Private Fields
 
@@ -18,8 +18,8 @@ public class Repository<TEntity> : IRepository<TEntity>
     /// <inheritdoc/>
     public void Add(TEntity entity)
     {
-        _nextId++;
         entity.SetId(_nextId);
+        _nextId++;
         _entities.Add(entity);
     }
 
