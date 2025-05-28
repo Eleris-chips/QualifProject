@@ -1,0 +1,58 @@
+﻿namespace QualifProject.Business.Task;
+
+public class Task
+{
+    #region Public Constructors
+
+    public Task(string description, bool isCompleted, string title)
+    {
+        CreatedDate = DateTime.Now;
+        Description = description;
+        IsCompleted = isCompleted;
+        Title = title;
+    }
+
+    #endregion Public Constructors
+
+    #region Public Properties
+
+    public DateTime? CompletionDate { get; private set; }
+    public DateTime CreatedDate { get; }
+    public string Description { get; private set; }
+    public int Id { get; private set; }
+    public bool IsCompleted { get; private set; }
+    public string Title { get; private set; }
+
+    #endregion Public Properties
+
+    #region Public Methods
+
+    /// <summary>
+    /// Complete the current task.
+    /// </summary>
+    public void CompleteTask()
+    {
+        IsCompleted = true;
+        CompletionDate = DateTime.Now;
+    }
+
+    /// <summary>
+    /// Configure the current task.
+    /// </summary>
+    /// <param name="title">The title to set.</param>
+    /// <param name="description">The description to set.</param>
+    public void ConfigureTask(string title, string description)
+    {
+        Title = title;
+        Description = description;
+    }
+
+    /// <summary>
+    /// Set the current task id.
+    /// </summary>
+    /// <param name="taskId">The id to set.</param>
+    public void SetTaskId(int taskId)
+     => Id = taskId;
+
+    #endregion Public Methods
+}
